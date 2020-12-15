@@ -1,5 +1,7 @@
-PERSONNES (IDPers, Nom, Prenom, DateNaiss, Sexe, Statut)
-VACCIN (Reference, Type, DateInjection, DateRappel)
+PERSONNES (IDPers, Nom, Prenom, DateNaiss, Sexe)
+TYPE_STATUT(idStatut, LibelleStatut)
+VACCIN (Reference, DateInjection, DateRappel)
+TYPE_VACCIN (idTypeVaccin, LibelleTypeVaccin)
 
 CREATE TABLE PERSONNES (
 	IDPers INTEGER,
@@ -7,21 +9,27 @@ CREATE TABLE PERSONNES (
 	Prenom varchar(50),
 	DateNaiss date,
 	Sexe boolean,
-	Statut varchar,
+	idStatut INTEGER,
 	PRIMARY KEY (IDPers)
+	FOREIGN KEY (idStatut) REFERENCES TYPE_STATUT (idStatut)
 )
 
+CREATE TABLE TYPE_STATUT (
+	idStatut INTEGER,
+	LibelleStatut varchar(50),
+	PRIMARY KEY (idStatut),
+
 CREATE TABLE VACCIN (
-	Reference INTERGER,
+	Reference INTEGER,
 	DateInjection date,
 	DateRappel date,
 	idTypeVaccin INTEGER,
 	PRIMARY KEY (Reference),
-	FOREIGN KEY (idTypeVaccin) REFERENCES TYPE_VACCIN(idTypeVaccin)
+	FOREIGN KEY (idTypeVaccin) REFERENCES TYPE_VACCIN (idTypeVaccin)
 )
 
 CREATE TABLE TYPE_VACCIN (
 	idTypeVaccin INTEGER,
-	Libelle varchar(50),
+	LibelleTypeVacci varchar(50),
 	PRIMARY KEY (idTypeVaccin)
 )
