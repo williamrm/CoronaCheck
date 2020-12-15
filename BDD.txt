@@ -1,0 +1,27 @@
+PERSONNES (IDPers, Nom, Prenom, DateNaiss, Sexe, Statut)
+VACCIN (Reference, Type, DateInjection, DateRappel)
+
+CREATE TABLE PERSONNES (
+	IDPers INTEGER,
+	Nom varchar(50),
+	Prenom varchar(50),
+	DateNaiss date,
+	Sexe boolean,
+	Statut varchar,
+	PRIMARY KEY (IDPers)
+)
+
+CREATE TABLE VACCIN (
+	Reference INTERGER,
+	DateInjection date,
+	DateRappel date,
+	idTypeVaccin INTEGER,
+	PRIMARY KEY (Reference),
+	FOREIGN KEY (idTypeVaccin) REFERENCES TYPE_VACCIN(idTypeVaccin)
+)
+
+CREATE TABLE TYPE_VACCIN (
+	idTypeVaccin INTEGER,
+	Libelle varchar(50),
+	PRIMARY KEY (idTypeVaccin)
+)
