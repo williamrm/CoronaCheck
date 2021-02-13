@@ -12,17 +12,20 @@ namespace Vaccinator.Controllers
         // 
         // GET: /Enregistrement/
 
-        public string Index()
+        public IActionResult Index()
         {
-            return "This is my default action...";
+            return View();
         }
 
         // 
         // GET: /Enregistrement/bienvenue/ 
 
-        public string bienvenue(string name, int ID = 1)
+        public IActionResult bienvenue(string name, int numTimes = 1)
         {
-            return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
+            ViewData["Message"] = "Hello " + name;
+            ViewData["NumTimes"] = numTimes;
+
+            return View();
         }
 
 
