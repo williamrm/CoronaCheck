@@ -8,6 +8,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MvcInjection.Data;
+using MvcPersonne.Data;
+using MvcType.Data;
+using MvcVaccin.Data;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Vaccinator
 {
@@ -24,6 +30,18 @@ namespace Vaccinator
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<MvcPersonneContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("BDDVaccinator")));
+
+            services.AddDbContext<MvcInjectionContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("BDDVaccinator")));
+
+            services.AddDbContext<MvcVaccinContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("BDDVaccinator")));
+
+            services.AddDbContext<MvcTypeContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("BDDVaccinator")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

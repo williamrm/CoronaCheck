@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MvcVaccin.Models;
 
-namespace Vaccinator.Models
+namespace MvcType.Models
 {
     public class Type
     {
