@@ -8,6 +8,10 @@ namespace MvcPersonne.Models
 {
     public class Personne
     {
+        public Personne ()
+        {
+            this.Injections = new HashSet<Injection>();
+        }
         public int idPersonne { get; set; }
         public string nom { get; set; }
         public string prenom { get; set; }
@@ -16,5 +20,6 @@ namespace MvcPersonne.Models
         [DataType(DataType.Date)]
         public DateTime date_naissance { get; set; }
         public bool isResident { get; set; }
+        public virtual ICollection<Injection> Injections { get; set; }
     }
 }
