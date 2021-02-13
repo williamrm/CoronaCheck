@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maell\\Documents\\EPSI\\Vaccinator\\Vaccinator\\Vaccinator\\Vaccinator.csproj": {}
+    "C:\\Users\\maell\\Documents\\EPSI\\Vaccinator\\CoronaCheck\\Vaccinator\\Vaccinator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maell\\Documents\\EPSI\\Vaccinator\\Vaccinator\\Vaccinator\\Vaccinator.csproj": {
+    "C:\\Users\\maell\\Documents\\EPSI\\Vaccinator\\CoronaCheck\\Vaccinator\\Vaccinator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maell\\Documents\\EPSI\\Vaccinator\\Vaccinator\\Vaccinator\\Vaccinator.csproj",
+        "projectUniqueName": "C:\\Users\\maell\\Documents\\EPSI\\Vaccinator\\CoronaCheck\\Vaccinator\\Vaccinator.csproj",
         "projectName": "Vaccinator",
-        "projectPath": "C:\\Users\\maell\\Documents\\EPSI\\Vaccinator\\Vaccinator\\Vaccinator\\Vaccinator.csproj",
+        "projectPath": "C:\\Users\\maell\\Documents\\EPSI\\Vaccinator\\CoronaCheck\\Vaccinator\\Vaccinator.csproj",
         "packagesPath": "C:\\Users\\maell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maell\\Documents\\EPSI\\Vaccinator\\Vaccinator\\Vaccinator\\obj\\",
+        "outputPath": "C:\\Users\\maell\\Documents\\EPSI\\Vaccinator\\CoronaCheck\\Vaccinator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -46,7 +46,21 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
