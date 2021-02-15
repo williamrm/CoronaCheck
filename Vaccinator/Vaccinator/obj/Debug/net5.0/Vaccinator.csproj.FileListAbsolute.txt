@@ -181,3 +181,8 @@ C:\Users\maell\Documents\EPSI\Vaccinator\CoronaCheck\Vaccinator\Vaccinator\obj\D
 C:\Users\maell\Documents\EPSI\Vaccinator\CoronaCheck\Vaccinator\Vaccinator\obj\Debug\net5.0\Razor\Views\Vaccins\Details.cshtml.g.cs
 C:\Users\maell\Documents\EPSI\Vaccinator\CoronaCheck\Vaccinator\Vaccinator\obj\Debug\net5.0\Razor\Views\Vaccins\Edit.cshtml.g.cs
 C:\Users\maell\Documents\EPSI\Vaccinator\CoronaCheck\Vaccinator\Vaccinator\obj\Debug\net5.0\Razor\Views\Vaccins\Index.cshtml.g.cs
+C:\Users\maell\Documents\EPSI\Vaccinator\CoronaCheck\Vaccinator\Vaccinator\obj\Debug\net5.0\Razor\Views\Types\Create.cshtml.g.cs
+C:\Users\maell\Documents\EPSI\Vaccinator\CoronaCheck\Vaccinator\Vaccinator\obj\Debug\net5.0\Razor\Views\Types\Delete.cshtml.g.cs
+C:\Users\maell\Documents\EPSI\Vaccinator\CoronaCheck\Vaccinator\Vaccinator\obj\Debug\net5.0\Razor\Views\Types\Details.cshtml.g.cs
+C:\Users\maell\Documents\EPSI\Vaccinator\CoronaCheck\Vaccinator\Vaccinator\obj\Debug\net5.0\Razor\Views\Types\Edit.cshtml.g.cs
+C:\Users\maell\Documents\EPSI\Vaccinator\CoronaCheck\Vaccinator\Vaccinator\obj\Debug\net5.0\Razor\Views\Types\Index.cshtml.g.cs
