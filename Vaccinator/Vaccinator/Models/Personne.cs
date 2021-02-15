@@ -13,7 +13,9 @@ namespace MvcPersonne.Models
         {
             this.Injections = new HashSet<Injection>();
         }
+        [Key]
         public int idPersonne { get; set; }
+
         public string nom { get; set; }
         public string prenom { get; set; }
         public bool sexe { get; set; }

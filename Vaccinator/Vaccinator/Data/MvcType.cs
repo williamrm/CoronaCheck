@@ -15,6 +15,7 @@ namespace MvcType.Data
         {
         }
 
-        public DbSet<MvcTypeContext> Type { get; set; }
+        public DbSet<MvcType.Models.Type> Type { get; set; }
     }
+    
 }

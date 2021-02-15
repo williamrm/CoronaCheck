@@ -8,7 +8,9 @@ namespace MvcInjection.Models
 {
     public class Injection
     {
+        [Key]
         public int idInjection { get; set; }
+
         [DataType(DataType.Date)]
         public DateTime date { get; set; }
         public DateTime date_rappel { get; set; }
