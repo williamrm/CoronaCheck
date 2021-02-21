@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Création d'une personne</h1>
 
 <h4>Personne</h4>
 <hr />
@@ -24,7 +24,7 @@
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="sexe" /> @Html.DisplayNameFor(model => model.sexe)
+                    <input form-check-input" asp-for="sexe" /> @Html.DisplayNameFor(model => model.sexe)
                 </label>
             </div>
             <div class="form-group">
@@ -34,18 +34,19 @@
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="isResident" /> @Html.DisplayNameFor(model => model.isResident)
+                    <input class="form-check-input" asp-for="isResident" value="Je suis rédident"/> @Html.DisplayNameFor(model => model.isResident)
                 </label>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Créer" class="btn btn-primary" />
+                <input type="reset" value="Annuler" class=" btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Retour à la liste des personnes</a>
 </div>
 
 @section Scripts {
