@@ -1,11 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MvcInjection;
+using MvcPersonne;
+using MvcType;
+using MvcVaccin;
+using System;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Vaccinator.Models
 {
     public class SeedData
     {
+
     }
 }

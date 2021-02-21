@@ -17,5 +17,5 @@ namespace MvcType.Data
 
         public DbSet<MvcType.Models.Type> Type { get; set; }
     }
-    
+
 }
